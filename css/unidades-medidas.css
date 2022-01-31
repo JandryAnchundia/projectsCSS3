@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* html{
+
+    font-size: 16px;
+} */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+.opinion{
+    padding: 2em;
+    font-size: 50px;
+    width: 70%;
+    margin: 40px auto;
+    box-shadow: 8px 8px 16px rgb(0, 0, .5);
+}
+
+.title{
+    font-size: 1rem;
+}
+
+.text{
+    font-size: 20px;
+}
+
+/* Los pixeles no van a cambiar. 
+Ni poruqe vaya a conf de Chrome title.title.title
+No se recomienta usar cm.
+SOLUCION: Unidades de medidas relativas: rem depende del :root
+font-size de 16px es el recomendado. 
+1rem = 16px
+EM ES RELATIVO AL TAMAÑO DEL PADRE O DEL MISMO ELEMENTO 
+y toma el tamaño de fonsts size y lo multiplica
+
+padding: 2em;
+    font-size: 50px;
+REM EN LOS TEXTOS
+USAR EN EM EN VALORES COMO WHIDH HEIGH PADING BORDER
+
+*/
+
+
+
+/* LIMITAR MEDIDAS Y PORCENTAJES
+ */
+.container{
+
+
+   /*  max-width: 400px;
+    max-height: 400px;
+
+    min-width: 200px;
+    min-height: 200px; */
+    /* overflow:  hidden; */ /* Para todo lo que se desborde */
+    /* width: 600px;
+    height: 1200px; */
+
+    width: 90%;
+    height: 300px;
+    background: steelblue;
+    margin: 30px auto ;
+}
+
+.children{
+    width: 100%;
+    height: 120px;
+    background: tomato;
+}
+
+
+/* Los Porcentajes no se pueden aplicar a heigth 
+porque los elementos a bloques ocupan el 100% del ancho 
+mas no del alto por eso se debe hacer a pixeles 
+
+Para poner porcentajes en los contenedores se le debe especificar 
+un heigt en px al padre es decir al body y definirle un heigth 
+porque ya ocupa el 100% del anch0, 
+
+body{
+heigth: 600px;
+}
+
+.container{
+    width: 30%;
+    heigth: 100%;
+
+
+*/
+
+
+/* Los viewport es todo lo que podemos visualizar.
+El alto y el ancho.
+
+viewport width vw
+viewport heigth vh
+
+No depende de un padre es simplemente lo que vemos en el navegador
+ */
+
+.container{
+
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+
+

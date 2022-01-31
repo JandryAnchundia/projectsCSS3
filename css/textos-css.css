@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+   
+    font-family: 'Raleway', sans-serif;
+}
+
+.card{
+
+    background-image: linear-gradient(#2a265f81,#2a265f85 ), url(../img/spidy.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    width: 400px;
+    color: #fff;
+    margin:40px auto ;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 6px rgb(0, 0, .2) ;
+
+}
+
+.title{
+    font-size: 30px;
+    border-bottom: 3px solid white;
+    padding: 7px;
+    margin-bottom: 30px;
+}
+
+.text{
+
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 2;
+
+}
+
+.text .bold{
+    font-weight: bold;
+    color: white;
+}
+
+.cta{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 25px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Toma la imagen como un texto 
+
+excepto el a del final que es un elemento en linea
+*/
+.container{
+    background: white;
+    width: 70%;
+    /* height: 500px; */
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgb(0, 0, .2);
+    text-align: center;
+    
+}
+
+.img{
+    width: 250px;
+    text-align: inherit;
+}
+
+.h1{
+   text-align: center;
+  /*  line-height: 500PX;  *//* IMPORTANTE PARA CENTRAR TEXT, GUIARSE CON EL HEIGTH DEL PADRE SOLO CUANDO HAYA UNA LINEA*/ 
+  
+}
+
+.copy{
+
+
+        text-align: justify;
+        padding: 10px 0;
+        font-style: italic;
+       /*  letter-spacing: 20px;
+        word-spacing: 30px;
+        text-shadow: 3px 3px 6px rgb(0, 0, 0.5);
+        text-transform: uppercase;
+        line-height: 70px; */
+
+        /* PROPIEDAD FONT */
+
+        font-variant: small-caps;
+
+}
+
+.bold{
+    color: crimson;
+    font-weight: bold;
+    font-size: 20px;
+}
+.enlace{
+
+    color: crimson;
+    display: inline-block;
+    text-align:center ;
+    text-decoration: none;
+    /* text-decoration: line style color;
+    text-decoration-style: double;
+    text-decoration-color: red;
+    */
+    border: 1px solid;
+    padding: 5px;
+} 
+input{
+    
+    font-size: 20px;
+}

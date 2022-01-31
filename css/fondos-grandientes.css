@@ -1,0 +1,97 @@
+.container{
+
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    background-color: rgb(119, 73, 161);
+    background-image: url(../img/spidy.jpeg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position: top left;
+    background-position: bottom left;
+    background-position: bottom right;
+    background-position: bottom center;
+    background-position: top center;
+    background-position: center;
+
+    background-size: 50%;
+    background-size: 250px 300px;
+    background-size: contain; /* ocupa todo el contenido ajustandose */
+    background-size: cover;/*  Escala la imagen sin degradarla y recorta de ser necesariO PARA OCUPAR TODO EL ELEMENTO */
+}
+
+
+/* BACKGROUND ATACHMENT */
+
+
+.atachment{
+    width: 100%;
+    height: 100vh;
+    margin-top: 40px;
+    background-image: url(../img/spidy.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0.1px;
+
+
+}
+
+
+
+.fixed{
+    background-attachment: fixed;  /* Se va a usar cuando se ocupe el 100% del navegador. EFECTO PARALAX. Efecto hero.  */
+}
+
+.title{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: cornsilk;
+    margin-top: 100px;
+   
+}
+
+
+.space{
+    height: 5000px;
+}
+
+
+/* GRADIENTES */
+
+.contain{
+    width: 80%;
+    height: 400px;
+    margin: 30px auto;
+    background: steelblue;
+    /* background-image: linear-gradient(direction, color stop, color stop); */
+    background-image: linear-gradient( to top, gold, orange);
+    background-image: linear-gradient( to top left, gold, orange);
+    
+}
+
+
+/* EN LOS GRADIENTES SIEMPRE TIENE QUE IR LA FUNCION LINEAR GRADIENT Y DESPUES LA IMAGEN */
+.header{
+    padding: 0.1px;
+    height:600px ;
+    background-image: linear-gradient(rgba(220, 20, 60, 0.253), rgba(0, 128, 0, 0.164)), url(../img/spidy.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.title2{
+
+    color: blueviolet;
+    font-size: 90px;
+    margin-top:90px;
+}
+
+
+
+/* CANVAS COLOR VER COLOR DE IMAGENES */
+/* REMOVE PNG */
+/* PAGINAS PARA GRADIENTES BUSCARLAS */

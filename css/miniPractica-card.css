@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.card{
+width: 300px;
+box-shadow: 5px 6px 11px black;
+margin: 10px auto;
+
+padding-bottom: 50px ;
+}
+
+
+.img{
+    width: 100%;
+}
+
+
+.container{
+
+    width: 80%;
+    margin: auto;
+}
+
+.title{
+    text-align: center;
+    padding: 10px 0px 0px;
+}
+
+.buttom{
+    display: block;
+    background: brown;
+    padding: 13px 0px;
+    color: cornsilk;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 159px;
+    margin: 0 auto ;
+    margin-top: 20px;
+    
+    
+    
+}
