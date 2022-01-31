@@ -36,7 +36,174 @@ body{
     margin: 0 auto;
     text-align: center;
     line-height: 100px; /* Se centra con el heigth del contenedor */
-    margin-top: calc(50vh - 50px); /* Hay colapso de margenes se centra 
+     /* Hay colapso de margenes se centra 
     con todo el contenido. Hay que darle un padding al contendor padre */
+    margin-top: calc(50vh - 50px); /* Esto es para desplazar el texto en medio 
+    se pone los dos heigth de los contenedores por la mitad: background tiene 100vh, por ende son 50, y h2 tiene 100px y son 50px */
+}
 
+/* Seccion de parrafos  */
+
+.text{
+    width: 100%;
+    text-align: center;
+    padding: 60px 30px;
+
+}
+
+.text p{
+   padding: 20px 0; 
+}
+
+
+/* Siguiente Seccion */
+
+.section2{
+
+    height: 600px; /*Por cascada tendra prioridad */
+    background-image: url(../img/img_2.jpg);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height:600px;
+}
+
+.background h3{
+
+   font-size:  4rem; /* Cada rem mide 16px */
+  /*  EL h3 esta heredando todo lo que se le pone al section2 ya que 
+   .background y .section son lo mismo y son padres de h3 */
+
+}
+
+/* Desarrollado por mi */
+
+.text2{
+    width: 100%;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.text2 p{
+    text-align: justify;
+    padding: 20px 0;
+    
+
+}
+
+/* Seccion de imagen */
+
+.section3{
+
+    background-image: url(../img/img_3.jpg);
+    height: 400px;
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height:400px;
+}
+
+
+/* Siguiente hecha desde cero */
+
+.background001{
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 0.1px;
+
+
+}
+
+.section001{
+    background-image: url(../img/img_4.jpg);
+    
+    
+
+}
+
+
+.section001 h3{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background: white;
+    margin: 0px auto;
+    margin-top: calc(300px - 50px)
+}
+
+
+/* SECION DEL TEXTO DESDE CERO  */
+
+.text001{
+    width: 100%;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.text001 p{
+    padding: 20px 0;
+
+}
+
+
+/* SIGUIENTE SESION DESDE CERO  */
+
+
+/* Se hacen dos para el efecto paralax */
+
+.background002{
+width: 100%;
+height: 600px;
+/* Defino las caracteriticas de la imagen */
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+/* Luego ubico la imagen en la otra clase del mismo contenedor */
+
+
+}
+
+.section002{
+
+    background-image: url(../img/img_5.jpg);
+    padding: 0.1px;
+
+}
+
+
+/* Ahora proseguimos a centrar el titulo */
+
+.section002 h2{
+
+    width: 600px;
+    height: 70px;
+    background: black;
+    color: wheat;
+    text-align: center;
+    margin: 0px auto;
+    line-height: 70px;
+    margin-top: calc(300px - 35px);
+}
+
+/* AHORA VAMOS A MODIFICAR EL TEXTO */
+
+.text002{
+    width: 100%;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.text002 h4{
+    width: 300px;
+    margin: auto;
+    margin-bottom:10px;
+    padding-bottom:10px ;
+    border-bottom: 1px solid black;
+}
+
+.text002 p{
+    text-align: justify;
 }
