@@ -1,0 +1,135 @@
+*, ::after, ::before{/*  PARA QUE SE AJUSTE AL BOX SIZIN */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: coral;
+}
+
+
+/* Cuando no tiene heigth se ajusta al contenido, ojo con eso */
+
+.card{
+
+    width: 300px;
+    margin: 40px auto;
+    overflow: hidden;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: -20px -20px 0px 0px rgb(255, 137, 137); /* El mas y el menos orientan la proyeccion de la sombra  */
+    
+    
+    
+    
+}
+
+.card__title{
+    
+    border-bottom: 3px solid coral;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+}
+
+
+/* EL PRIMER PSEUDOELEMENTO ES SELECTION 
+Sino poner selector es como si pusieras un universal
+*/
+
+p::selection{ /* Hace que al subrralar en negritas se agreguen las caracteristicas  */
+    background: coral;
+    color: white;
+    text-shadow: 0 0 6px black;
+}
+
+p::first-line{
+    color: crimson;
+}
+
+.card__title::first-letter{
+
+
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 20px;
+}
+
+/* MODICAR EL PLACEHOLDER CON PSEUDOELEMENTOS */
+
+input[type="text"]{
+margin-left: 20px;
+padding: 15px 3px;
+background: crimson;
+color: white;
+border: none;
+border-bottom:4px solid #fff ;
+outline:none; /* para quitar el borde de alrededor */
+
+
+}
+
+input[type="text"]::placeholder{
+    color: white;
+
+}
+
+/* SIGUIENTE BEFORE ANTES Y AFTER  DESPUES*/
+/* Insertar elementos del navegador sin que esten escritos en el hrtml */
+
+
+.card__text::before{
+
+    content: "Hola"; /* Se agrega antes del pparrafo */
+}
+
+.card__title::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: salmon;
+}
+
+.card__title::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: salmon;
+}
+
+.card__text::after{
+content: "Anchundia";
+}
+
+
+
+/* CREAR CONTADORES */
+
+ul{
+
+    counter-reset: contador ;
+}
+
+li{
+    list-style: none;
+    padding: 0;
+}
+
+li::before{
+
+    content: counter(contador);
+    counter-increment: contador;
+    background: salmon ;
+    color: seagreen;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    margin-right: 4px;
+    margin-bottom: 15px;
+}

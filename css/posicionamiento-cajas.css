@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+
+    height: 200vh;
+}
+
+.container{
+
+    width: 450px;
+    height: 530px;
+    margin: 20px auto;
+    border: 5px solid red;
+    position: relative;
+    
+}
+.box{
+    width: 100px;
+    height:100px;
+    background: steelblue;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px ;
+    font-weight: bold;
+  
+    
+}
+
+
+/* Por defecto todos los elementos lo tienen */
+.static{
+    position: static;
+}
+
+/* Al principio no modifica el flujo ni posicionamiento del elemento */
+/* Se llama asi porde se despelaza dependiendo de su posiscion orginal */
+.relative{
+    background: red;
+    /* position: relative; */
+   /*  top: 100px; */ /* Lo empuja 20 px hacia arriba */
+    /* left: 200px; */ /* Lo empuja desde la izquierda 200px nO importa la unidad de medida */
+    /* right: ;
+    bottom: ; */
+}
+
+
+/* Sirve para posicionar a ese elemento a partir de sus ancestros que esten previamente posicionados. Esto sirve para hacer efectos fantasticos */
+.absolute{
+    background: purple ;
+    position: absolute;
+    top: 0;
+    left: 77%;
+    margin: 0;
+    z-index: 1;/*  MONTAR UNO DE OTRO ELEMENTO ponerlo de 10 en 10 SOLO SON PARA RELATIVE, FIXED ABOSOLUTE AHI SI SE SUPERPONEN*/
+}
+
+
+/* POSICIONAMIENTO FIXED O FIJO */
+
+/* SE POSICIONA EN BASE AL NEVEGADOR Y NO TOA A NINGUN ANCESTRO CON REFERENCIA QUE TENGA ALGUN TIPO DE POSICIONAMIENTO PREDEFINDIO */
+.fixed{
+    background: rgb(65, 65, 61);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 1em;
+
+}
+
+.fixed a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.fixed a:hover{
+    text-decoration: underline;
+}
+
+
+

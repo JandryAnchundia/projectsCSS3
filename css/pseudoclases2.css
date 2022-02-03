@@ -1,0 +1,112 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box{
+
+    display: block;
+    background: steelblue ;
+    width: 55px;
+    height: 55px;
+    margin: 10px 0;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 55px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.container{
+    margin-left: -5;
+    padding: 10px 0;
+    border: 3px solid lightcoral;
+
+}
+
+/* COMO FILTRAR ELEMENTO DE ACUERDO A SU TIPO? */
+
+
+/* div.box{
+    background: lightcoral;
+} */
+
+/* Seleciona a los elementos que son unicos en su seccion o en su :placeholder-shown */
+
+div:only-of-type{
+background: lightcoral;
+}
+
+/* Solo los unicos elementos en sus padres que tenga la clase box 
+NO DEBE TENER EL MISMO ELEMENTO, ES DECIR UN HERMANO YA QUE AHI NO SE APLICARIA NADA
+*/
+
+/* .box:only-of-type{
+    background: lightcoral;
+} */
+
+/* Seleciona al rpimer elemento de su tipo que este dentro del contenedor */
+/* .box:first-of-type{
+    background: lightpink;
+}
+ */
+
+
+/*  .box:last-of-type{
+     background: red;
+ } */
+
+/* Seleciona el elemento a elegir a los elemntos que son los segundos del mismo tipo */
+
+/* LOS CONTENEDORES SON CLAVES Y LA PALABRA TIPO */
+/*  .box:nth-of-type(number, odd, even, n){ /* con odd elementos impares */
+/*       background: red;
+ } */ 
+
+/*  ULTIMA PSEUDOCLASE DE TIPOS */
+
+/* .box:nth-last-of-type(1){
+
+background: red;
+} */
+
+
+/* AQUI YA NO IMPORTA EL TIPO SINO EL ELEMENTO. SI HAY ELEMENTOS QUE TIENEN HERMNAOS NO SE CUMPLE LA CONDICION*/
+.box:only-child{
+    background: red;
+}
+
+/* SELECCIONA AL PRIMER HIJO DE SU CONTENEDOR */
+
+/* TIPO ES H1, H2, DIV, P, ETC... ELEMENTO ES TODO */
+div:first-child{
+
+    background: red;
+}
+
+/* EL ULTIMO DE SU PADRE QUE EN ESTE CASO ES BODY */
+/* div:last-child{
+
+    background: red;
+} */
+
+/* Para evitar dolores de cabeza podemos usar la clase padre y de ahi ir seleccionandndo. Ejemplo:nth-child( */
+/* ES EMJOR HACERLO ASI */
+.container :nth-child(3){
+
+     background: red;
+}
+
+
+
+
+
+
+

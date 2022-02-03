@@ -1,0 +1,197 @@
+
+:root{ /* La psudoclase root es la raiz del documento y aqui s eponen estilos que queremos que lleve toda la pagina
+    aqui se saben poner las variables css lo veremos despues*/
+    background: steelblue;
+}
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Las pseudoclases son semejantes a los selectores
+Tienen especificidad. 
+Son como un plus. Las psudoclases se pueden tomar 
+tambien como selectores.
+Tienen estado: damos click o cuando pasamos el mouse 
+por un elemento. */
+
+/* PSEUDOCLASES EXCLUSIVAS PARA LAS ETIQUETAS  a */
+
+/* La pseudoclase link solo se usa para los enlaces */
+
+ .enlace{
+    display: block;
+    background: tomato;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 3px solid #ebd1eb;
+} 
+
+.enlace:link{
+
+   
+   background: hotpink;
+   color: black;
+   
+}
+
+
+.enlace:visited{
+
+    background: crimson ;
+    color: black;
+}
+
+.enlace:hover{
+   text-decoration: underline; /*  Por la espeficidad se toma en cuenta este */
+}
+
+.enlace:hover{
+
+    padding: 40px 20px;
+    transition: .3s; /* La animacion se hace menos tosca */
+}
+
+.enlace:active{
+
+    background: steelblue;
+    color: white;
+    /* Cuando se esta haciendo click */
+}
+
+
+
+/* SIGUIENTE PSEUDOCLASE */
+
+.event{
+    display: inline-block;/*  Esto hace que el elemento tenga su misma naturaleza de en linea pero pueda agarrar el margin y todas esas propiedades uniicas de los elementos en block */
+    margin-top: 30px;
+    margin-left: 20px;
+    background:crimson;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.event:active{
+    padding: 23px;
+
+}
+
+/* LA SIGUIENTE PSEUDOCLASE ES OBJETICO QUE ES TARGET */
+
+/* El target AL HACER CLICK apunta a un id de un contenedor vacio */
+
+#objetivo{
+
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+    background: steelblue;
+    transition: .3s;
+}
+
+#objetivo:target{
+
+    margin-left: 550px ; /* ESTO REACIONARA CON TODO AQUELLO QUE TENGA EL MISMO ID */
+}
+
+
+/* PSEUDOCLASES DE LOS FORMULARIOS */
+
+.form{
+    
+    width: 80%;
+    margin: 30px auto;
+    background: #f2f2f2;
+    box-shadow: 0 0 5px rgba(0, 0, 0,.5);
+    padding: 30px;
+}
+
+/* SELECIONA A UN ELEMENTO HIJO QUE ESTE EN EL ESTADO FOCUS poe ejemplo en este caso input:focus y al pulsarlo todo el formulario cambia de coor */
+
+.form:focus-within{
+background: darkcyan;
+
+}
+
+.form__title{
+    text-align: center;
+}
+
+input{
+    display: block;
+}
+
+input[type="text"], input[type="email"]{
+    width: 100%; /* El padding del padre lo limita al quitarlo si ocupa todo */
+    padding: 12px 5px;/*  EL PADIN ES INTERNO  */
+    margin-bottom: 20px;
+    border: none;
+    outline: none; /* Es el borde negro */
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+}
+
+/* inline es cuando se pone al lado uno del otro. 
+block es cuando esta uno abajo del otro como cajas.
+Los inline ocupan solo una parte pequeña del ancho de la pantalla
+los block ocupan el 100% del ancho y definiendolo podemos centrarlos.
+Con display cambiamos su naturaleza y podemos hacer que un elemento inline actue como blockquote
+Sin embargo la opcion: display: inline-block nos permite dejar al elemento como un inline
+pero con las caracteristicas de un bloque es decir va a ocupar el 100% del ancho y asu vez se va a centrar */
+
+
+input:focus{ /* :focus  es cuando le das click y cambia de color por ejemplo dentro de los formularios */
+    background: rgba(220, 20, 60, 0.507);
+}
+
+h2:focus{
+
+    background: red;
+    color: black;
+}
+
+/* :checked es cuando le sen a la palomita */
+input[type="checkbox"]:checked + label{ /* EL + ES PARA SU HERMANO ADYACENTE */
+background: crimson;
+color: darkcyan;
+
+}
+
+/* LA ULTIMA PSUDACLSE ESTA BAJO EL FORM  ir arriba cerca de form + hermano*/
+
+h3{
+
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* EXCLUYE AL ELEMENTO Y NO TIENE ESPECIFICIDAD LO QUE ESTA DENTRO SI , TA BUENO */
+h3:not(.title){
+
+
+ color: red;
+
+}
+
+
+/* Vamos a selecionar a todos los elementos que no tengan la psudoclase hover */
+h3:not(:hover){
+
+text-decoration: line-through;
+}
+
+
