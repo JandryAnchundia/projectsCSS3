@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Raleway:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+   
+font-family: 'Raleway', sans-serif;
+min-height: 200vh;
+}
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(180deg, #275dc281 0%, #1d20b686 100%), url(../img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0.1px;
+    position: relative;
+
+
+}
+
+.container-text{
+    text-align: center;
+    margin-top: 150px;
+    color: #fff;
+}
+
+.hero__title{
+    font-size:4rem;
+
+    
+}
+
+.hero__copy{
+    font-size: 2rem ;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.hero__cta{
+    display: inline-block;
+    background: #fff;
+    text-decoration: none;
+    color: #275dc2;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+.hero__cta:hover{ /* Si paso el mause por este elemento */
+
+background: #275dc2;
+color: #fff;
+}
+
+/* AHORA VAMOS A AGREGARLE UNA OLA O WAVY
+URL DE PAGINA
+UNPLAH
+REMOVE
+CANVAS IMAGE COLOR
+Y ESTA:
+https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections
+*/
+
+/* Se acomoda a su ancestro mas cercano hero que es el contenedor */
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

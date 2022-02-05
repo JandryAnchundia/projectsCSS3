@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;/*  Hace que se desplace bien chevere */
+}
+
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav{
+    background: purple;
+    height: 70px;
+    padding: 0 50px;
+    text-align: right;
+    position: fixed; /* Se posiciona al navegador */
+    width: 100%;
+    top: 0;
+}
+
+.enlaces{
+    color: #ffff;
+    text-decoration: none;
+    line-height: 70px; /* Como el padre para que se centre medio a medio */
+    padding: 0 20px; /* Esto es cuanto a las letras dentro del nav */
+    display: inline-block; /* Para que agarre los cambios como paddig width etc */
+    
+
+}
+
+
+.enlaces:hover{
+    background: #ffff;
+    color: blueviolet;
+}
+.section{
+
+    height:100vh ; /* Tamaño de vistas de todas las seciones */
+    background-attachment: fixed;/*  Para que tenga un mejor efecto el gradiente */
+}
+
+.title{
+    font-size: 3rem;
+    color: #ffff;
+    text-align: center;
+    line-height: 100vh; /* Para que se centre. Hay dos formas con margin calc() pero es mas dificil mejor es un text aline y un line heig */
+}
+
+/* Aqui empieza a cobrar sentido en nth of type, ya que al hacerle el cambio a 
+alguno de la seccion, se aplicara a todos porque todos tienen la misma 
+class y el mismo h2 y todo por igual entonces tengo que especificarle el tipo 
+de la primera secion para que unicamente se aplique ahi */
+.section:nth-of-type(1){
+
+    margin-top: 70px; /* Para que baje y se vea la letra */
+   /*  position: relative; Hace que sea relativo a su ubicacion y se puedan aplicar 
+   el resto de caracteristicas
+    z-index: 1; Hace que se superpongan los elemento en este caso el fondo blaco por encina de la seccion
+    background: #ffff; */
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.section:nth-of-type(2){
+
+  
+ 
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+.section:nth-of-type(3){
+
+ 
+ 
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
